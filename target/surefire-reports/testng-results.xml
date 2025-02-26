@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-26T13:03:46 IST" name="Suite" finished-at="2025-02-26T13:04:38 IST" duration-ms="52430">
+  <suite started-at="2025-02-26T13:28:02 IST" name="Suite" finished-at="2025-02-26T13:28:24 IST" duration-ms="21443">
     <groups>
     </groups>
-    <test started-at="2025-02-26T13:03:46 IST" name="User Authentication Tests" finished-at="2025-02-26T13:04:38 IST" duration-ms="52430">
+    <test started-at="2025-02-26T13:28:02 IST" name="User Authentication Tests" finished-at="2025-02-26T13:28:24 IST" duration-ms="21443">
       <class name="automation.tests.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:03:46 IST" name="setUp" finished-at="2025-02-26T13:03:49 IST" duration-ms="3575" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:28:02 IST" name="setUp" finished-at="2025-02-26T13:28:06 IST" duration-ms="3939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="registerTest()[pri:1, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:03:49 IST" name="registerTest" finished-at="2025-02-26T13:04:11 IST" duration-ms="21918" status="PASS">
+        <test-method signature="registerTest()[pri:1, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:28:06 IST" name="registerTest" finished-at="2025-02-26T13:28:17 IST" duration-ms="10303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:04:11 IST" name="tearDown" finished-at="2025-02-26T13:04:11 IST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.RegisterTest@3febb011]" started-at="2025-02-26T13:28:17 IST" name="tearDown" finished-at="2025-02-26T13:28:17 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- automation.tests.RegisterTest -->
       <class name="automation.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:04:11 IST" name="setUp" finished-at="2025-02-26T13:04:14 IST" duration-ms="2827" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:28:17 IST" name="setUp" finished-at="2025-02-26T13:28:19 IST" duration-ms="2467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:2, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:04:14 IST" name="testLogin" finished-at="2025-02-26T13:04:38 IST" depends-on-methods="automation.tests.RegisterTest.registerTest" duration-ms="23659" status="PASS">
+        <test-method signature="testLogin()[pri:2, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:28:19 IST" name="testLogin" finished-at="2025-02-26T13:28:24 IST" depends-on-methods="automation.tests.RegisterTest.registerTest" duration-ms="4275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:04:38 IST" name="tearDown" finished-at="2025-02-26T13:04:38 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.tests.LoginTest@57a3af25]" started-at="2025-02-26T13:28:24 IST" name="tearDown" finished-at="2025-02-26T13:28:24 IST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -40,4 +40,8 @@ public class LoginPage {
     public String getPageTitle() {
         return driver.getTitle();
     }
+
+    public WebElement getLoginButton() {
+        return loginButton;
+    }
 }

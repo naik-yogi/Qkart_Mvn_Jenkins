@@ -2,9 +2,12 @@ package automation.tests;
 
 import java.time.Duration;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import automation.LoginPage;
 import automation.RegisterPage;
 import automation.utils.TestDataGenerator;
 
@@ -17,13 +20,13 @@ public class RegisterTest extends BaseTest {
         driver.get("https://crio-qkart-frontend-qa.vercel.app/register");
 
         RegisterPage register = new RegisterPage(driver);
+        LoginPage login = new LoginPage(driver);
         register.enterUsername(username);
         register.enterPassword(password);
         register.enterConfirmPassword(password);
-        
-        Thread.sleep(Duration.ofSeconds(5));
         register.clickRegisterButton();
-        Thread.sleep(Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOf(login.getLoginButton()));
 
         boolean registrationSuccess = driver.getCurrentUrl().equals("https://crio-qkart-frontend-qa.vercel.app/login");
 
@@ -33,9 +36,6 @@ public class RegisterTest extends BaseTest {
         }
 
         Assert.assertTrue(registrationSuccess, "Registration failed!");
-        //Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Registration failed");
-
-        //Assert.assertEquals(driver.getCurrentUrl(), "https://crio-qkart-frontend-qa.vercel.app/login", "Registration failed");
     }
     
 }

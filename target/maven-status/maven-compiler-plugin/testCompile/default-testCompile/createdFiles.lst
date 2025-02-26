@@ -1,4 +1,5 @@
 automation\utils\TestDataGenerator.class
+automation\utils\ExtentManager.class
 automation\tests\BaseTest.class
 automation\tests\LoginTest.class
 automation\tests\RegisterTest.class

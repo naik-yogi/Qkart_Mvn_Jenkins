@@ -20,8 +20,8 @@ public class LoginTest extends BaseTest {
         
         LoginPage loginPage = new LoginPage(driver);
         HomePage home = new HomePage(driver);
-        loginPage.enterUsername(RegisterTest.username);
-        test.log(Status.INFO, "Entered the username:" + RegisterTest.username);
+        loginPage.enterUsername(RegisterTest.username.get());
+        test.log(Status.INFO, "Entered the username:" + RegisterTest.username.get());
         loginPage.enterPassword(RegisterTest.password);
         loginPage.clickLogin();
         test.log(Status.INFO, "Entered Credentials & Clicked Login");

@@ -12,7 +12,7 @@ import automation.RegisterPage;
 import automation.utils.TestDataGenerator;
 
 public class RegisterTest extends BaseTest {
-    public static String username = TestDataGenerator.getRandomUUIDUsername();
+    public static ThreadLocal<String> username = new ThreadLocal<>();
     public static String password = TestDataGenerator.getPassword();
 
     @Test(priority = 1)
@@ -20,10 +20,13 @@ public class RegisterTest extends BaseTest {
         driver.get("https://crio-qkart-frontend-qa.vercel.app/register");
         test.log(Status.INFO, "Navigated to Registration Page");
 
+        // Generate and store a unique username for this thread/browser
+        username.set(TestDataGenerator.getRandomUUIDUsername());
+
         RegisterPage register = new RegisterPage(driver);
         LoginPage login = new LoginPage(driver);
-        register.enterUsername(username);
-        test.log(Status.INFO, "Entered the username:" + username);
+        register.enterUsername(username.get());
+        test.log(Status.INFO, "Entered the username:" + username.get());
         register.enterPassword(password);
         register.enterConfirmPassword(password);
         register.clickRegisterButton();

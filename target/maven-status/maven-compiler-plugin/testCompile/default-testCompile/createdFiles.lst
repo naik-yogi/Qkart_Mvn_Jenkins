@@ -1,0 +1,4 @@
+automation\tests\BaseTest.class
+automation\tests\LoginTest.class
+automation\tests\RegisterTest.class
+automation\tests\checkString.class

@@ -6,10 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import automation.RegisterPage;
+import automation.utils.TestDataGenerator;
 
 public class RegisterTest extends BaseTest {
-    String username="51yogi65443";
-    String password="Yogi@3241";
+    public static String username = TestDataGenerator.getTimestampUsername();
+    public static String password = TestDataGenerator.getPassword();
 
     @Test(priority = 1)
     public void registerTest() throws InterruptedException{

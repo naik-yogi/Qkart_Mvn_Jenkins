@@ -1,3 +1,4 @@
+automation\utils\TestDataGenerator.class
 automation\tests\BaseTest.class
 automation\tests\LoginTest.class
 automation\tests\RegisterTest.class

@@ -14,9 +14,8 @@ public class LoginTest extends BaseTest {
         driver.get("https://crio-qkart-frontend-qa.vercel.app/login"); // Change this to your app URL
         
         LoginPage loginPage = new LoginPage(driver);
-        RegisterTest r = new RegisterTest();
-        loginPage.enterUsername(r.username);
-        loginPage.enterPassword(r.password);
+        loginPage.enterUsername(RegisterTest.username);
+        loginPage.enterPassword(RegisterTest.password);
         Thread.sleep(Duration.ofSeconds(5));
         loginPage.clickLogin();
         Thread.sleep(Duration.ofSeconds(15));
